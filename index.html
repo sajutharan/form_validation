@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form_validation</title>
+    <style>
+        #errorName,#errorMail,#errorZipcode,#errorPhoneNumber {
+            color: red;
+        }
+        #button{
+            background-color: aqua;
+            color: black;
+            width: 50px;
+            border-radius: 25px;
+        }
+        body{
+            
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            min-height: 1000px;
+            padding: 2px;
+                
+        }
+        
+    </style>
+    
+</head>
+<body id="bg">
+    <form id="form">
+        <fieldset>
+        <div id="main">
+            <div id="heding">
+                <h2>Login</h2>
+            </div>
+            <div>
+               <label for="name">Name</label><br>
+               <input type="text" name="name" placeholder="Enter your Name" id="name"><br>
+               <p id="errorName"></p>
+    
+               <label for="email">Email</label><br>
+               <input type="text" name="email" placeholder=" Enter your Email " id="email"><br>
+               <span id="errorMail"><p></p></span>
+
+               <label for="zipcode">Zipcode</label><br>
+               <input type="number" name="zipcode" placeholder="enter your zipcode" id="zipcode"><br>
+               <span id="errorZipcode"><p></p></span>
+
+               <label for="phoneNumber">PhoneNumber</label><br>
+               <input type="number" name="phoneNumber" placeholder="Enter your PhoneNumber" id="number"><br>
+               <span id="errorPhoneNumber"><p></p></span>
+
+               <input type="button" value="Login" id="button" onclick="check()"></button>             
+            </div>
+
+            
+        </div>
+    </fieldset> 
+    </form>
+    <script src="/validation.js"></script>
+</body>
+</html>
